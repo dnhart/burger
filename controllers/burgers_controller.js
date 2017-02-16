@@ -10,8 +10,8 @@ router.get("/", function(req, res) {
     var hbsObject = {
       burger: data
     };
-    console.log(hbsObject);
     res.render("index", hbsObject);
+    console.log("selectAll consolelog"+hbsObject);
   });
 });
 
@@ -27,10 +27,8 @@ router.post("/", function(req, res) {
 
 router.put("/:id", function(req, res) {
   var condition = "id = " + req.params.id;
-
-  console.log("condition", condition);
-
-  burger.updateOne({
+  console.log(req.body);
+  burger.updateOne("burgers",{
     devoured: req.body.devoured
   }, condition, function() {
     res.redirect("/");

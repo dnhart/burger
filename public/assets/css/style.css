@@ -1,0 +1,53 @@
+body {
+  background-color: #dd852b;
+  color: #ffffff;
+  font-size: 14px;
+}
+
+.container {
+  width:95%;
+}
+
+.header{
+  text-align: center;
+}
+
+.addburger{
+  text-align: center;
+
+}
+li {
+  background: #ffffff;
+  margin: 5px;
+  padding: 15px;
+  color: #000000;
+  list-style-type: none;
+  font-size: 20px;
+}
+
+.btn-danger{
+  float: right;
+}
+
+#devoured>ul>li{
+  color: #bbbbbb;
+}
+
+.label {
+  font-weight: bold;
+}
+
+.create-update-form {
+  background: #ffde6b ;
+  margin: 5px;
+  padding: 5px;
+  color: #000000;
+}
+
+.form-group {
+  margin-bottom: 5px;
+}
+
+ul{
+  padding: 0;
+}

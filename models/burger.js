@@ -17,7 +17,7 @@ var burger ={
 
     updateOne: function(table, objColVals, condition, cb){
         orm.updateOne("burgers", objColVals, condition, function(res){
-        cd(res);
+        cb(res);
         });
     }
 };
